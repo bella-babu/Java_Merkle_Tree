@@ -24,7 +24,7 @@ It contains four variables:<br>
 **Step 2:** If the tree is null then we will return null.<br>
 **Step 3:** If the tree->key is equal to the key we will return the tree.<br>
 **Step 4:** If the key is smaller than tree->key then we will return find(tree->left, key)<br>
-**Step 5:**else return find (tree->right, key)<br>
+**Step 5:** else return find (tree->right, key)<br>
 #### **b).	Add node function:**<br>
 **Step 1:** We will take key and value as parameters.<br>
 **Step 2:** Take the hash(key) and store it in a variable called index.<br>
@@ -59,9 +59,9 @@ It contains four variables:<br>
 **Step 7:** else if tree->left is equal to null and tree->right is not equal to null then decrement the size and return tree->right.<br>
 **Step 8:** else assign tree->left to a pointer called left of data type node.<br>
 **Step 9:** While left->right is not equal to null, left is equal to left->right.<br>
-**Step 10: **tree->key is equal to left->key.<br>
+**Step 10:** tree->key is equal to left->key.<br>
 **Step 11:** tree->value is equal to left->value.<br>
-**Step 12: **tree->left is equal to remove(tree->left, tree->key).<br>
+**Step 12:** tree->left is equal to remove(tree->left, tree->key).<br>
 **Step 13:** Return tree.<br>
 
 ## **Applications of Merkle tree:**<br>
