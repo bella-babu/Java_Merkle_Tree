@@ -12,20 +12,20 @@ Merkle tree is a fundamental part of blockchain technology. It is a mathematical
 **Merkle tree representation**<br>
 ![image](https://user-images.githubusercontent.com/76433840/164987009-dd5ff419-ecfe-44de-a0b3-982886a081a4.png)<br>
  
-**Structure of the node of the binary Merkle tree**<br>
+#### **Structure of the node of the binary Merkle tree**<br>
 It contains four variables:<br>
 *	It contains a key variable.<br>
 *	It contains a value variable<br>
 *	It contains two links.<br>
 
 ## **Algorithm:**
-**a).	Find function :**<br>
+#### **a).	Find function :**<br>
 **Step 1:** We will take the tree and key as parameters.<br>
 **Step 2:** If the tree is null then we will return null.<br>
 **Step 3:** If the tree->key is equal to the key we will return the tree.<br>
 **Step 4:** If the key is smaller than tree->key then we will return find(tree->left, key)<br>
 **Step 5:**else return find (tree->right, key)<br>
-**b).	Add node function:**<br>
+#### **b).	Add node function:**<br>
 **Step 1:** We will take key and value as parameters.<br>
 **Step 2:** Take the hash(key) and store it in a variable called index.<br>
 **Step 3:** store (struct node*) arr[index].head in a pointer called tree of datatype node.<br>
@@ -34,14 +34,14 @@ It contains four variables:<br>
 **Step 6:** If the tree is not null then we will check if the key is already present in the tree using the find function.<br>
 **Step 7:** If the key is already present in the tree then we will update the value.<br>
 **Step 8:** If it is not present in the tree then we will use the insert function to insert the element.<br>
-**c)	Insert function.**<br>
+#### **c)	Insert function.**<br>
 **Step 1:** It will take tree and item pointers of node data type as parameters.<br>
 **Step 2:** If item->key is smaller than tree->key and tree->left is null then assign the item to tree->left.<br>
 **Step 3:** If item->key is smaller than tree->key and tree->left is not null then call insert function with tree->left and item as parameters.<br>
 **Step 4:** If item->key is greater than tree->key and tree->right is null then assign the item to tree->right.<br>
 **Step 5:** If item->key is greater than tree->key and tree->right is not null then call insert function with tree->right and item as parameters.<br>
 
-**d)	Delete a node function**<br>
+#### **d)	Delete a node function**<br>
 **Step 1:** We will take a key as a parameter.<br>
 **Step 2:** Take the hash(key) and store it in a variable called index.<br>
 **Step 3:** store (struct node*) arr[index].head in a pointer called tree of datatype node.<br>
@@ -49,7 +49,7 @@ It contains four variables:<br>
 **Step 5:** If the tree is not null then we will check if the key is already present in the tree using the find function.<br>
 **Step 6:** If the find function returns null then the key is not present in the tree.<br>
 **Step 7:** If it is not null then we will use the remove function to delete the element.<br>
-**e)Remove function.**<br>
+#### **e)Remove function.**<br>
 **Step 1:** It will take tree and key as parameters.<br>
 **Step 2:** If the tree is null then return null.<br>
 **Step 3:** If the key is smaller than the tree->key then tree->left is equal to remove (tree->left, key) and return tree.<br>
