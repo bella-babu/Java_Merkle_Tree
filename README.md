@@ -70,7 +70,7 @@ b)	Git uses a merkle tree to store its data.<br>
 c)	Ethereum uses a Merkle Patricia Trie.<br>
 d)	It is a fundamental part of the blockchain.<br>
 
-## **References<br>
+## **References**<br>
 https://www.investopedia.com/terms/m/merkle-tree.asp<br>
 https://brilliant.org/wiki/merkle-tree/<br>
 https://www.geeksforgeeks.org/introduction-to-merkle-tree/<br>
