@@ -68,9 +68,7 @@ a)	Apache Cassandra uses Merkle Trees to detect inconsistencies.<br>
 b)	Git uses a merkle tree to store its data.<br>
 c)	Ethereum uses a Merkle Patricia Trie.<br>
 d)	It is a fundamental part of the blockchain.<br>
-## **Output**<br>
-<p align="center"><img src=![image](https://user-images.githubusercontent.com/76433840/165529624-043e2a29-d52f-4fa1-bc30-1aee314fca0c.png)
- alt="drawing" lenght="500" width="650" class="centerImage"/></p><br>
+
 ## **References**<br>
 https://www.investopedia.com/terms/m/merkle-tree.asp<br>
 https://brilliant.org/wiki/merkle-tree/<br>
